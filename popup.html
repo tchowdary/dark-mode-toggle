@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 16px;
+      font-family: system-ui;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mode-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .mode-option input[type="radio"] {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mode-option">
+      <input type="radio" id="light" name="mode" value="light">
+      <label for="light">Light Mode</label>
+    </div>
+    <div class="mode-option">
+      <input type="radio" id="dark" name="mode" value="dark">
+      <label for="dark">Dark Mode</label>
+    </div>
+    <div class="mode-option">
+      <input type="radio" id="system" name="mode" value="system">
+      <label for="system">Match System</label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
